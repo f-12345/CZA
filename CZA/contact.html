@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cza Equipment Sales | Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <span>18065 W Little York Rd, Katy, TX 77449</span>
+    <div class="utility-right">
+      <a href="mailto:Info@czaequipmentsalesllc.com">Info@czaequipmentsalesllc.com</a>
+      <span class="util-sep">|</span>
+      <a href="tel:0000000000">000-000-0000</a>
+    </div>
+  </div>
+</div>
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/images/cza.png" alt="Cza Equipment Sales" class="brand-logo">
+      <div>
+        Cza Equipment Sales
+        <small>Equipment • Financing • Support</small>
+      </div>
+    </a>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">Menu</button>
+
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-item has-dd">
+        <a class="nav-link" href="#" data-dd="true">Equipment <span class="chev">▼</span></a>
+        <div class="dropdown">
+          <a href="inventory-medical.html">A - Medical</a>
+          <a href="inventory-small.html">B - Small Equipment</a>
+          <a href="inventory-heavy.html">C - Heavy Equipments</a>
+          <a href="inventory-beauty.html">D - Body Contouring & Beauty</a>
+          <!-- <a href="inventory-office.html">E - Office Equipment</a> -->
+          <a href="inventory-automotive.html">F - Automotive Solutions</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dd">
+        <a class="nav-link" href="#" data-dd="true">Financing <span class="chev">▼</span></a>
+        <div class="dropdown">
+          <a href="get-prequalified.html">Get Pre-Qualified</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="tile">
+        <img class="tile-img" style="height:320px"
+             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2200&q=60"
+             alt="Contact">
+        <div class="tile-body">
+          <div class="kicker">Contact</div>
+          <h2 style="margin:8px 0 6px;">Request pricing, availability, and financing</h2>
+          <p>Call, email, or send a message. We respond fast.</p>
+          <div class="btn-row" style="margin-top:10px;">
+            <a class="btn primary" href="get-prequalified.html">Get Pre-Qualified</a>
+            <a class="btn" href="inventory-medical.html">Browse Equipment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid3" style="grid-template-columns: 1fr 1fr; gap:14px;">
+        <div class="card">
+          <h3 style="margin-top:0;">Contact Info</h3>
+          <p style="color: var(--muted); margin-top:6px;">
+            Email: Info@czaequipmentsalesllc.com<br>
+            Phone: 000-000-0000
+          </p>
+
+          <h4 style="margin:14px 0 6px;">Address</h4>
+          <div style="color: rgba(255,255,255,.78);">
+            18065 W Little York Rd<br>
+            Katy, TX 77449
+          </div>
+
+          <div class="btn-row" style="margin-top:12px;">
+            <a class="btn primary" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=18065%20W%20Little%20York%20Rd%2C%20Katy%2C%20TX%2077449">View Map</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Send a Message</h3>
+          <p style="color: var(--muted); margin-top:6px;">
+            Tell us what category you’re looking for and what equipment you need.
+          </p>
+
+          <form class="form" id="contactForm" action="https://formspree.io/f/YOURID" method="POST">
+            <input type="hidden" name="_subject" value="New Website Inquiry - Cza Equipment Sales" />
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="Name" required autocomplete="name" />
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="Phone" inputmode="tel" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="category">Category</label>
+              <select id="category" name="Category" required>
+                <option value="">Select</option>
+                <option>A - Medical</option>
+                <option>B - Small Equipment</option>
+                <option>C - Heavy Equipments</option>
+                <option>D - Body Contouring & Beauty</option>
+                <option>E - Office Equipment</option>
+                <option>F - Automotive Solutions</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="5" required placeholder="What equipment are you looking for?"></textarea>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn primary" type="submit">Send Message</button>
+              <button class="btn" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand-col">
+      <img src="assets/images/cza.png" alt="Cza Equipment Sales" class="footer-logo">
+      <div class="footer-name">Cza Equipment Sales</div>
+      <p>Professional equipment supply for clinics, businesses, workshops and industrial operations across Texas.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Equipment</div>
+      <a href="inventory-medical.html">Medical Equipment</a>
+      <a href="inventory-small.html">Small Equipment</a>
+      <a href="inventory-heavy.html">Heavy Equipment</a>
+      <a href="inventory-automotive.html">Automotive Solutions</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Company</div>
+      <a href="index.html">Home</a>
+      <a href="get-prequalified.html">Financing</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Contact</div>
+      <a href="mailto:Info@czaequipmentsalesllc.com">Info@czaequipmentsalesllc.com</a>
+      <a href="tel:0000000000">000-000-0000</a>
+      <span>18065 W Little York Rd<br>Katy, TX 77449</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>&#169; <span id="y"></span> Cza Equipment Sales LLC. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const btn = form.querySelector('button[type="submit"]');
+    const oldText = btn.textContent;
+    btn.textContent = "Sending...";
+    btn.disabled = true;
+
+    try {
+      const formData = new FormData(form);
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (res.ok) {
+        form.reset();
+        alert("Thank you. Your message has been sent. We will contact you shortly.");
+      } else {
+        alert("Something went wrong. Please call 000-000-0000 or email Info@czaequipmentsalesllc.com.");
+      }
+    } catch (err) {
+      alert("Something went wrong. Please call 000-000-0000 or email Info@czaequipmentsalesllc.com.");
+    } finally {
+      btn.textContent = oldText;
+      btn.disabled = false;
+    }
+  });
+</script>
+
+</body>
+</html>

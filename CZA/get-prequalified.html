@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cza Equipment Sales | Get Pre-Qualified</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <span>18065 W Little York Rd, Katy, TX 77449</span>
+    <div class="utility-right">
+      <a href="mailto:Info@czaequipmentsalesllc.com">Info@czaequipmentsalesllc.com</a>
+      <span class="util-sep">|</span>
+      <a href="tel:0000000000">000-000-0000</a>
+    </div>
+  </div>
+</div>
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/images/cza.png" alt="Cza Equipment Sales" class="brand-logo">
+      <div>
+        Cza Equipment Sales
+        <small>Equipment • Financing • Support</small>
+      </div>
+    </a>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">Menu</button>
+
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-item has-dd">
+        <a class="nav-link" href="#" data-dd="true">Equipment <span class="chev">▼</span></a>
+        <div class="dropdown">
+          <a href="inventory-medical.html">A - Medical</a>
+          <a href="inventory-small.html">B - Small Equipment</a>
+          <a href="inventory-heavy.html">C - Heavy Equipments</a>
+          <a href="inventory-beauty.html">D - Body Contouring & Beauty</a>
+          <a href="inventory-office.html">E - Office Equipment</a>
+          <a href="inventory-automotive.html">F - Automotive Solutions</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dd">
+        <a class="nav-link" href="#" data-dd="true">Financing <span class="chev">▼</span></a>
+        <div class="dropdown">
+          <a href="get-prequalified.html">Get Pre-Qualified</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="tile">
+        <img class="tile-img" style="height:320px"
+             src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2200&q=60"
+             alt="Pre-Qualification">
+        <div class="tile-body">
+          <div class="kicker">Get Pre-Qualified</div>
+          <h2 style="margin:8px 0 6px;">Start the financing process</h2>
+          <p>Submit your info and our team will follow up with next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <h2>Pre-Qualification Form</h2>
+        <p style="color: var(--muted); margin-top:6px;">
+          Call 000-000-0000 or email Info@czaequipmentsalesllc.com if you need help.
+        </p>
+
+        <!-- SAFE STATIC FORM (no action, no JS). -->
+        <form class="form" id="creditApp" onsubmit="return false;">
+          <h3 style="margin-top:0;">Equipment Financing Application</h3>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Dealer Information</h4>
+
+            <div class="split">
+              <div class="field">
+                <label>Dealer Name</label>
+                <input value="Cza Equipment Sales" readonly />
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input value="000-000-0000" readonly />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Office Address</label>
+                <input value="18065 W Little York Rd, Katy, TX 77449" readonly />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input value="Info@czaequipmentsalesllc.com" readonly />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Applicant Information</h4>
+
+            <div class="split">
+              <div class="field">
+                <label>Full Name</label>
+                <input required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label>Date of Birth</label>
+                <input type="date" required autocomplete="bday" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Phone</label>
+                <input required inputmode="tel" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input type="email" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Current Address</label>
+              <input required autocomplete="street-address" />
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>City</label>
+                <input required autocomplete="address-level2" />
+              </div>
+              <div class="field">
+                <label>State</label>
+                <input required maxlength="2" placeholder="TX" autocomplete="address-level1" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Zip</label>
+                <input required inputmode="numeric" autocomplete="postal-code" />
+              </div>
+              <div class="field">
+                <label>Monthly Housing Payment</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Equipment Information</h4>
+
+            <div class="split">
+              <div class="field">
+                <label>Category</label>
+                <select required>
+                  <option value="">Select</option>
+                  <option>A - Medical</option>
+                  <option>B - Small Equipment</option>
+                  <option>C - Heavy Equipments</option>
+                  <option>D - Body Contouring & Beauty</option>
+                  <option>E - Office Equipment</option>
+                  <option>F - Automotive Solutions</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Condition</label>
+                <select required>
+                  <option value="">Select</option>
+                  <option>New</option>
+                  <option>Used</option>
+                  <option>Either</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Equipment Type</label>
+                <input required placeholder="Example: forklift, exam table, printer, laser..." />
+              </div>
+              <div class="field">
+                <label>Brand / Model</label>
+                <input placeholder="If known" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Estimated Purchase Price</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+              <div class="field">
+                <label>Down Payment</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Authorization</h4>
+
+            <div class="field">
+              <label>
+                <input type="checkbox" required />
+                I agree and authorize verification.
+              </label>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Applicant Signature (type full name)</label>
+                <input required />
+              </div>
+              <div class="field">
+                <label>Date</label>
+                <input type="date" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn primary" href="mailto:Info@czaequipmentsalesllc.com?subject=Pre-Qualification%20Request%20-%20Cza%20Equipment%20Sales">Email Application</a>
+            <a class="btn" href="tel:0000000000">Call 000-000-0000</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand-col">
+      <img src="assets/images/cza.png" alt="Cza Equipment Sales" class="footer-logo">
+      <div class="footer-name">Cza Equipment Sales</div>
+      <p>Professional equipment supply for clinics, businesses, workshops and industrial operations across Texas.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Equipment</div>
+      <a href="inventory-medical.html">Medical Equipment</a>
+      <a href="inventory-small.html">Small Equipment</a>
+      <a href="inventory-heavy.html">Heavy Equipment</a>
+      <a href="inventory-automotive.html">Automotive Solutions</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Company</div>
+      <a href="index.html">Home</a>
+      <a href="get-prequalified.html">Financing</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Contact</div>
+      <a href="mailto:Info@czaequipmentsalesllc.com">Info@czaequipmentsalesllc.com</a>
+      <a href="tel:0000000000">000-000-0000</a>
+      <span>18065 W Little York Rd<br>Katy, TX 77449</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>&#169; <span id="y"></span> Cza Equipment Sales LLC. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
