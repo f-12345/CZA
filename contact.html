@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cza Equipment Sales | Contact</title>
+  <title>Cza Equipment Sales | Get Pre-Qualified</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -39,7 +39,7 @@
           <a href="inventory-small.html">B - Small Equipment</a>
           <a href="inventory-heavy.html">C - Heavy Equipments</a>
           <a href="inventory-beauty.html">D - Body Contouring & Beauty</a>
-          <!-- <a href="inventory-office.html">E - Office Equipment</a> -->
+          <a href="inventory-office.html">E - Office Equipment</a>
           <a href="inventory-automotive.html">F - Automotive Solutions</a>
         </div>
       </div>
@@ -61,16 +61,12 @@
     <div class="container">
       <div class="tile">
         <img class="tile-img" style="height:320px"
-             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2200&q=60"
-             alt="Contact">
+             src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2200&q=60"
+             alt="Pre-Qualification">
         <div class="tile-body">
-          <div class="kicker">Contact</div>
-          <h2 style="margin:8px 0 6px;">Request pricing, availability, and financing</h2>
-          <p>Call, email, or send a message. We respond fast.</p>
-          <div class="btn-row" style="margin-top:10px;">
-            <a class="btn primary" href="get-prequalified.html">Get Pre-Qualified</a>
-            <a class="btn" href="inventory-medical.html">Browse Equipment</a>
-          </div>
+          <div class="kicker">Get Pre-Qualified</div>
+          <h2 style="margin:8px 0 6px;">Start the financing process</h2>
+          <p>Submit your info and our team will follow up with next steps.</p>
         </div>
       </div>
     </div>
@@ -78,75 +74,173 @@
 
   <section class="section">
     <div class="container">
-      <div class="grid3" style="grid-template-columns: 1fr 1fr; gap:14px;">
-        <div class="card">
-          <h3 style="margin-top:0;">Contact Info</h3>
-          <p style="color: var(--muted); margin-top:6px;">
-            Email: Info@czaequipmentsalesllc.com<br>
-            Phone: 832-526-7744
-          </p>
+      <div class="card">
+        <h2>Pre-Qualification Form</h2>
+        <p style="color: var(--muted); margin-top:6px;">
+          Call 832-526-7744 or email Info@czaequipmentsalesllc.com if you need help.
+        </p>
 
-          <h4 style="margin:14px 0 6px;">Address</h4>
-          <div style="color: rgba(255,255,255,.78);">
-            18065 W Little York Rd<br>
-            Katy, TX 77449
-          </div>
+        <!-- SAFE STATIC FORM (no action, no JS). -->
+        <form class="form" id="creditApp" onsubmit="return false;">
+          <h3 style="margin-top:0;">Equipment Financing Application</h3>
 
-          <div class="btn-row" style="margin-top:12px;">
-            <a class="btn primary" target="_blank" rel="noopener"
-               href="https://www.google.com/maps/search/?api=1&query=18065%20W%20Little%20York%20Rd%2C%20Katy%2C%20TX%2077449">View Map</a>
-          </div>
-        </div>
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Dealer Information</h4>
 
-        <div class="card">
-          <h3 style="margin-top:0;">Send a Message</h3>
-          <p style="color: var(--muted); margin-top:6px;">
-            Tell us what category you're looking for and what equipment you need.
-          </p>
-
-          <form class="form" id="contactForm" action="https://formspree.io/f/YOURID" method="POST">
-            <input type="hidden" name="_subject" value="New Website Inquiry - Cza Equipment Sales" />
-
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="Name" required autocomplete="name" />
+            <div class="split">
+              <div class="field">
+                <label>Dealer Name</label>
+                <input value="Cza Equipment Sales" readonly />
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input value="832-526-7744" readonly />
+              </div>
             </div>
 
             <div class="split">
               <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="Email" type="email" required autocomplete="email" />
+                <label>Office Address</label>
+                <input value="18065 W Little York Rd, Katy, TX 77449" readonly />
               </div>
               <div class="field">
-                <label for="phone">Phone</label>
-                <input id="phone" name="Phone" inputmode="tel" autocomplete="tel" />
+                <label>Email</label>
+                <input value="Info@czaequipmentsalesllc.com" readonly />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Applicant Information</h4>
+
+            <div class="split">
+              <div class="field">
+                <label>Full Name</label>
+                <input required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label>Date of Birth</label>
+                <input type="date" required autocomplete="bday" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Phone</label>
+                <input required inputmode="tel" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input type="email" required autocomplete="email" />
               </div>
             </div>
 
             <div class="field">
-              <label for="category">Category</label>
-              <select id="category" name="Category" required>
-                <option value="">Select</option>
-                <option>A - Medical</option>
-                <option>B - Small Equipment</option>
-                <option>C - Heavy Equipments</option>
-                <option>D - Body Contouring & Beauty</option>
-                <option>E - Office Equipment</option>
-                <option>F - Automotive Solutions</option>
-              </select>
+              <label>Current Address</label>
+              <input required autocomplete="street-address" />
             </div>
+
+            <div class="split">
+              <div class="field">
+                <label>City</label>
+                <input required autocomplete="address-level2" />
+              </div>
+              <div class="field">
+                <label>State</label>
+                <input required maxlength="2" placeholder="TX" autocomplete="address-level1" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Zip</label>
+                <input required inputmode="numeric" autocomplete="postal-code" />
+              </div>
+              <div class="field">
+                <label>Monthly Housing Payment</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Equipment Information</h4>
+
+            <div class="split">
+              <div class="field">
+                <label>Category</label>
+                <select required>
+                  <option value="">Select</option>
+                  <option>A - Medical</option>
+                  <option>B - Small Equipment</option>
+                  <option>C - Heavy Equipments</option>
+                  <option>D - Body Contouring & Beauty</option>
+                  <option>E - Office Equipment</option>
+                  <option>F - Automotive Solutions</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Condition</label>
+                <select required>
+                  <option value="">Select</option>
+                  <option>New</option>
+                  <option>Used</option>
+                  <option>Either</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Equipment Type</label>
+                <input required placeholder="Example: forklift, exam table, printer, laser..." />
+              </div>
+              <div class="field">
+                <label>Brand / Model</label>
+                <input placeholder="If known" />
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="field">
+                <label>Estimated Purchase Price</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+              <div class="field">
+                <label>Down Payment</label>
+                <input inputmode="decimal" placeholder="$" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 14px 0;">
+            <h4 style="margin:0 0 10px;">Authorization</h4>
 
             <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="Message" rows="5" required placeholder="What equipment are you looking for?"></textarea>
+              <label>
+                <input type="checkbox" required />
+                I agree and authorize verification.
+              </label>
             </div>
 
-            <div class="btn-row">
-              <button class="btn primary" type="submit">Send Message</button>
-              <button class="btn" type="reset">Clear</button>
+            <div class="split">
+              <div class="field">
+                <label>Applicant Signature (type full name)</label>
+                <input required />
+              </div>
+              <div class="field">
+                <label>Date</label>
+                <input type="date" required />
+              </div>
             </div>
-          </form>
-        </div>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn primary" href="mailto:Info@czaequipmentsalesllc.com?subject=Pre-Qualification%20Request%20-%20Cza%20Equipment%20Sales">Email Application</a>
+            <a class="btn" href="tel:8325267744">Call 832-526-7744</a>
+          </div>
+        </form>
+
       </div>
     </div>
   </section>
@@ -189,37 +283,6 @@
 <script src="assets/js/nav.js"></script>
 <script>
   document.getElementById("y").textContent = 2023;
-
-  const form = document.getElementById("contactForm");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const btn = form.querySelector('button[type="submit"]');
-    const oldText = btn.textContent;
-    btn.textContent = "Sending...";
-    btn.disabled = true;
-
-    try {
-      const formData = new FormData(form);
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: { "Accept": "application/json" }
-      });
-
-      if (res.ok) {
-        form.reset();
-        alert("Thank you. Your message has been sent. We will contact you shortly.");
-      } else {
-        alert("Something went wrong. Please call 832-526-7744 or email Info@czaequipmentsalesllc.com.");
-      }
-    } catch (err) {
-      alert("Something went wrong. Please call 832-526-7744 or email Info@czaequipmentsalesllc.com.");
-    } finally {
-      btn.textContent = oldText;
-      btn.disabled = false;
-    }
-  });
 </script>
 
 </body>
